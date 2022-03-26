@@ -43,3 +43,14 @@ form button:hover {
     background: #ff99ff;
     color: white;
 }
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.complete-btn {
+    height: 3rem;
+    width: 3rem;
+}
