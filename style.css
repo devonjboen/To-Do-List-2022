@@ -1,6 +1,45 @@
-#hello {
-    font-family: Nunito;
-    font-size: 100px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(120deg, #ff99ff, #99d6ff);
+    color: white;
+    font-family: nunito;
+    font-size: 2rem;
     font-weight: 300;
-    
+    min-height: 100vh;
+}
+
+header {
+    font-size: 2rem;
+}
+
+header, 
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button {
+    padding: 2rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+
+form button {
+    color: #ff99ff;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: #ff99ff;
+    color: white;
 }
