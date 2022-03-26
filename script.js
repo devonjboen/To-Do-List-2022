@@ -8,12 +8,12 @@ function addTodo(event) {
 //Prevent form from submitting
 event.preventDefault();
  //Todo DIV
- const todoDiv = document.createElement('div')
- todoDiv.classList.add("todo")
+ const todoDiv = document.createElement('div');
+ todoDiv.classList.add("todo");
  //Create LI
  const newTodo = document.createElement('li');
- newTodo.innterText = 'hey'
- newTodo.classList.add('todo-item')
+ newTodo.innerText = todoInput.value;
+ newTodo.classList.add('todo-item');
  todoDiv.appendChild(newTodo);
  //CHECKMARK BUTTON
  const completedButton = document.createElement('button');
@@ -26,4 +26,6 @@ event.preventDefault();
  deleteButton.classList.add('delete-btn');
  todoDiv.appendChild(deleteButton);
  todoList.appendChild(todoDiv);
+ //clear Todo INPUT VALUE
+ todoInput.value = '';
 }
