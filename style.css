@@ -50,6 +50,10 @@ form button:hover {
     align-items: center;
 }
 
+.todo-input {
+    outline: none;
+}
+
 .todo-list {
     min-width: 30%;
     list-style: none;
@@ -87,4 +91,14 @@ form button:hover {
 
 .todo-item {
     padding: 0rem 0.5rem;
+}
+
+.fa-check-double,
+.fa-trash-can {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration:line-through;
+    opacity: 0.5;
 }
