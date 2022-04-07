@@ -39,6 +39,7 @@ const item = e.target;
 if(item.classList[0] === "delete-btn") {
     const todo = item.parentElement;
     todo.remove();
+    
 }
 if(item.classList[0] === "complete-btn") {
     const todo = item.parentElement;
